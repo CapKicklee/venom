@@ -32,6 +32,7 @@ require (
 	github.com/mitchellh/mapstructure v1.3.3
 	github.com/mndrix/tap-go v0.0.0-20171203230836-629fa407e90b
 	github.com/mxk/go-imap v0.0.0-20150429134902-531c36c3f12d // indirect
+	github.com/nsf/jsondiff v0.0.0-20210303162244-6ea32392771e
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.3 // indirect
 	github.com/ovh/cds/sdk/interpolate v0.0.0-20201113080944-f9d9d58c157a

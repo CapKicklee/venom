@@ -24,6 +24,7 @@ import (
 	"github.com/ovh/venom/executors/grpc"
 	"github.com/ovh/venom/executors/http"
 	"github.com/ovh/venom/executors/imap"
+	"github.com/ovh/venom/executors/jsoncompare"
 	"github.com/ovh/venom/executors/kafka"
 	"github.com/ovh/venom/executors/ovhapi"
 	"github.com/ovh/venom/executors/rabbitmq"
@@ -327,6 +328,7 @@ Notice that variables initialized with -var-from-file argument can be overrided 
 		v.RegisterExecutorBuiltin(grpc.Name, grpc.New())
 		v.RegisterExecutorBuiltin(rabbitmq.Name, rabbitmq.New())
 		v.RegisterExecutorBuiltin(sql.Name, sql.New())
+		v.RegisterExecutorBuiltin(jsoncompare.Name, jsoncompare.New())
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
 		initArgs(cmd)

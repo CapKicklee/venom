@@ -1,0 +1,28 @@
+name: JSON Comparison testsuite
+testcases:
+- name: perfectmatch json comparison testcase
+  steps:
+  - type: jsoncompare
+    expectedjson: jsoncompare/testa.json
+    actualjson: jsoncompare/testb.json
+    assertions:
+    - result.perfectmatch ShouldBeTrue
+    - result.difference ShouldBeBlank
+
+- name: supersetmatch json comparison testcase
+  steps: 
+  - type: jsoncompare
+    expectedjson: jsoncompare/testa.json
+    actualjson: jsoncompare/testc.json
+    assertions:
+    - result.supersetmatch ShouldBeTrue
+    - result.difference ShouldNotBeBlank
+
+- name: nomatch json comparison testcase
+  steps:
+  - type: jsoncompare
+    expectedjson: jsoncompare/testa.json
+    actualjson: jsoncompare/testd.json
+    assertions:
+    - result.nomatch ShouldBeTrue
+    - result.difference ShouldNotBeBlank

@@ -155,6 +155,7 @@ testcases:
 * **grpc**: https://github.com/ovh/venom/tree/master/executors/grpc
 * **http**: https://github.com/ovh/venom/tree/master/executors/http
 * **imap**: https://github.com/ovh/venom/tree/master/executors/imap
+* **jsoncompare**: https://github.com/ovh/venom/tree/master/executors/jsoncompare
 * **kafka** https://github.com/ovh/venom/tree/master/executors/kafka
 * **odbc**: https://github.com/ovh/venom/tree/master/executors/plugins/odbc
 * **ovhapi**: https://github.com/ovh/venom/tree/master/executors/ovhapi
